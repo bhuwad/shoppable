@@ -1,0 +1,17 @@
+<form action="uploadImage" method="post" enctype="multipart/form-data">
+    <label for="file">Select Image:</label>
+    <input type="file" name="file" id="file">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
+<%
+  String fileName = request.getParameter("file");
+  String folderPath = "C:/uploads/";
+  Part filePart = request.getPart("file");
+  File uploads = new File(folderPath);
+  if(!uploads.exists()){
+    uploads.mkdir();
+  }
+  String filePath = folderPath + fileName;
+  filePart.write(filePath);
+%>
