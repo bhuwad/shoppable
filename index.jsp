@@ -132,7 +132,7 @@
 
     <!--first row of products starts-->
     <div class="small-container">
-        <h2 class="title">PETER ENGLAND</h2>
+        <h2 class="title">PETER INDIAN</h2>
         <div class="row">
             <div class="col-4">
                 <img src="images/Peter england.jpg" alt="Peter england">
